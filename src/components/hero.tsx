@@ -44,7 +44,7 @@ export default function Hero() {
           {/* Headline */}
           <motion.div variants={item} className="text-center space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold text-balance">
-              Olá, sou <span className="text-accent">Luan Pires</span>
+              Olá, sou o <span className="text-accent">Luan Pires</span>
             </h1>
           </motion.div>
 
@@ -58,29 +58,6 @@ export default function Hero() {
               . Criei interfaces modernas e de alto desempenho para empresas de
               fintech e startups inovadoras.
             </p>
-          </motion.div>
-
-          {/* CTA Buttons */}
-          <motion.div
-            variants={item}
-            className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
-          >
-            <motion.a
-              href="#projects"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-accent text-black rounded-lg font-semibold text-lg hover:bg-accent-dark transition-colors"
-            >
-              Ver Projetos
-            </motion.a>
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 border border-accent text-accent rounded-lg font-semibold text-lg hover:bg-accent/10 transition-colors"
-            >
-              Entrar em Contato
-            </motion.a>
           </motion.div>
 
           {/* Social Links */}

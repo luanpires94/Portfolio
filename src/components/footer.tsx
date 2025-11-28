@@ -116,21 +116,7 @@ export default function Footer() {
             <a href="#" className="hover:text-accent transition-colors">
               Termos
             </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              Sitemap
-            </a>
           </div>
-        </motion.div>
-
-        {/* Powered By */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-          className="text-center text-xs text-muted-foreground mt-8 pt-8 border-t border-border"
-        >
-          Desenvolvido com React, Next.js e Framer Motion. Deployed na Vercel.
         </motion.div>
       </div>
     </footer>

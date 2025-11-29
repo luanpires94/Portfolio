@@ -6,7 +6,6 @@ import Hero from "./components/hero";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import ScrollToTop from "./components/scroll-to-top";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +25,6 @@ export default function Home() {
       <About />
       <Contact />
       <Footer />
-      <ScrollToTop />
     </main>
   );
 }

@@ -139,6 +139,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="text-2xl font-bold mb-8"
+            id="exp"
           >
             Experiência Profissional
           </motion.h3>

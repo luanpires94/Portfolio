@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import Avatar from "../assets/images/avatar.png";
 
 const container = {
   hidden: { opacity: 0 },
@@ -36,7 +37,9 @@ export default function Hero() {
               className="w-32 h-32 rounded-full bg-gradient-to-br from-accent to-accent-dark p-1 animate-glow"
             >
               <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
-                <span className="text-5xl font-bold text-accent">LP</span>
+                <span className="text-5xl font-bold text-accent">
+                  <img className="rounded-full" src={Avatar} alt="Avatar" />
+                </span>
               </div>
             </motion.div>
           </motion.div>
@@ -51,12 +54,14 @@ export default function Hero() {
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Desenvolvedor Frontend especializado em{" "}
+              Especialista em{" "}
+              <span className="text-foreground font-semibold">React</span>, com
+              domínio do ecossistema moderno (
               <span className="text-foreground font-semibold">
-                React, TypeScript e Next.js
+                Hooks, Context, Redux, Next.js, Routes
               </span>
-              . Criei interfaces modernas e de alto desempenho para empresas de
-              fintech e startups inovadoras.
+              ). Desenvolvo interfaces modernas, escaláveis e otimizadas para
+              produtos digitais de diferentes segmentos.
             </p>
           </motion.div>
 

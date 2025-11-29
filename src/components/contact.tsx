@@ -1,59 +1,13 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormState((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate form submission
-    console.log("Form submitted:", formState);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormState({ name: "", email: "", message: "" });
-      setSubmitted(false);
-    }, 3000);
-  };
-
   return (
     <section id="contact" className="py-20 px-6 bg-muted/50">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Vamos Conversar?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Tenho interesse em projetos desafiadores, feedbacks ou apenas uma
-            conversa sobre tech.
-          </p>
-          <div className="w-12 h-1 bg-accent rounded-full mx-auto" />
-        </motion.div>
-
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

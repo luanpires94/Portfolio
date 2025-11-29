@@ -41,7 +41,6 @@ export default function Contact() {
               </motion.a>
 
               <motion.a
-                href="tel:+21987112748"
                 whileHover={{ x: 10 }}
                 className="flex items-start gap-4 p-4 rounded-lg hover:bg-muted transition-colors"
               >

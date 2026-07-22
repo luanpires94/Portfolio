@@ -11,97 +11,150 @@ import {
   Settings,
   Repeat,
 } from "lucide-react";
+import SectionHeading from "./section-heading";
 
 const stacks = [
   { name: "React.js", icon: Atom },
-  { name: "TypeScript", icon: Code2 },
   { name: "Next.js", icon: Network },
+  { name: "TypeScript", icon: Code2 },
+  { name: "Node.js", icon: Settings },
+  { name: "MongoDB", icon: Target },
+  { name: "AWS", icon: Zap },
   { name: "Tailwind", icon: Wind },
-  { name: "Bootstrap", icon: Zap },
-  { name: "GraphQL", icon: Target },
-  { name: "Git", icon: Settings },
-  { name: "Redux", icon: Repeat },
+  { name: "Redux Toolkit", icon: Repeat },
 ];
 
 const timeline = [
   {
-    role: "Desenvolvedor Frontend Pleno",
-    company: "WA Fênix",
-    period: "jan de 2025 - dez de 2025",
+    role: "Desenvolvedor Fullstack Pleno",
+    company: "Certta",
+    period: "jan de 2026 - jun de 2026",
     description:
-      "Atuo como Desenvolvedor Front End Pleno na WA Fênix, empresa de tecnologia que desenvolve soluções digitais. Trabalho com foco em React.js, criando interfaces responsivas e funcionalidades alinhadas às necessidades dos clientes, atuando alocado na Fiotec em modelo híbrido.",
-    stack: ["React", "Styled Components", "REST API", "Bootstrap"],
+      "Desenvolvimento de aplicações Full Stack utilizando React.js no Front-end e Node.js no Back-end. Criação e consumo de APIs REST, modelagem em MongoDB, utilização de AWS (Lambda, S3 e CloudWatch), testes automatizados com Jest e Testing Library e uso de IA generativa para refatoração, geração de testes e análise de erros.",
+    stack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "AWS",
+      "Jest",
+      "Testing Library",
+    ],
   },
   {
-    role: "Desenvolvedor Frontend Pleno",
-    company: "PagBank (Fintech)",
+    role: "Desenvolvedor Front-end Pleno",
+    company: "Fiotec - Fundação de Apoio à Fiocruz",
+    period: "jan de 2025 - jan de 2026",
+    description:
+      "Desenvolvimento de interfaces responsivas e acessíveis com React.js para projetos institucionais da Fiocruz. Atuação na arquitetura componentizada, integração com APIs REST, aplicação de boas práticas de UX/UI, GitFlow, code review e metodologias ágeis.",
+    stack: [
+      "React",
+      "Styled Components",
+      "REST API",
+      "Bootstrap",
+      "GitFlow",
+    ],
+  },
+  {
+    role: "Desenvolvedor Front-end Pleno",
+    company: "PagBank",
     period: "jan de 2023 - jan de 2025",
     description:
-      "Atuei como Desenvolvedor Front End Pleno no PagBank, uma das maiores fintechs do Brasil. Desenvolvi interfaces modernas e de alta performance utilizando Next.js, TypeScript e Sass, com forte foco em usabilidade, componentização e integração via arquitetura BFF.",
-    stack: ["React", "TypeScript", "Next.js", "SASS", "BFF"],
+      "Desenvolvimento de aplicações de alta performance utilizando Next.js, TypeScript e Sass. Atuação no portal de notícias, integração via arquitetura BFF, componentização de interfaces, otimização de performance e colaboração em squads ágeis.",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "SASS",
+      "BFF",
+    ],
   },
   {
-    role: "Instrutor Frontend",
-    company: "Vai na Web",
+    role: "Desenvolvedor Front-end Júnior",
+    company: "Instituto Precisa Ser",
     period: "jan de 2022 - dez de 2022",
     description:
-      "Fui Instrutor Front End no Vai na Web, um programa de formação que prepara novos profissionais para o mercado de tecnologia. Ministrei aulas práticas de HTML, CSS, JavaScript e React, além de orientar alunos em projetos reais e revisar códigos com foco em boas práticas.",
-    stack: ["HTML5", "CSS3", "Git", "Javascript"],
+      "Desenvolvimento e manutenção de interfaces utilizando HTML, CSS e JavaScript, integração com APIs REST, foco em responsividade, acessibilidade e fidelidade ao design em projetos de impacto social.",
+    stack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "REST API",
+    ],
   },
-  {
-    role: "Desenvolvedor Frontend Júnior",
-    company: "Instituto Precisa Ser",
-    period: "jan de 2020 - dez de 2021",
-    description:
-      "Atuei como Desenvolvedor Front End Júnior no Instituto Precisa Ser, organização que desenvolve soluções digitais voltadas ao impacto social. Contribuí no desenvolvimento de interfaces utilizando HTML, CSS e JavaScript, priorizando acessibilidade, responsividade e fidelidade ao design.",
-    stack: ["HTML5", "CSS3", "Git", "Javascript"],
-  },
+];
+
+const highlights = [
+  "React.js & Next.js",
+  "Node.js",
+  "TypeScript",
+  "REST APIs & BFF",
+  "MongoDB",
+  "AWS (Lambda, S3, CloudWatch)",
+  "Jest & Testing Library",
+  "GitFlow & Code Review",
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-muted/50">
+    <section
+      id="about"
+      className="relative py-24 px-6 bg-background/60 backdrop-blur-sm"
+    >
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Sobre Mim</h2>
-          <div className="w-12 h-1 bg-accent rounded-full" />
-        </motion.div>
+        <SectionHeading index="01" eyebrow="Quem sou" title="Sobre mim" />
 
-        {/* Bio */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
-          className="mb-16 text-lg text-muted-foreground leading-relaxed max-w-3xl"
+          className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Sou desenvolvedor Frontend com experiência em React, com foco em
-            criar experiências digitais excepcionais. Com mais de 4 anos de
-            experiência, trabalhei em projetos desafiadores no setor de fintech,
-            desenvolvendo interfaces complexas, otimizando performance e
-            implementando soluções escaláveis.
+            Sou Desenvolvedor Fullstack com foco em Front-end e mais de 4 anos
+            de experiência construindo aplicações web modernas, escaláveis e de
+            alta performance. Atuo principalmente com React.js, Next.js e
+            TypeScript, além de desenvolver APIs e serviços utilizando Node.js.
+          </p>
+
+          <p>
+            Ao longo da minha carreira participei de projetos em fintechs e
+            instituições de grande impacto social, trabalhando com integração de
+            APIs REST/BFF, MongoDB, AWS, testes automatizados,
+            componentização e boas práticas de arquitetura, sempre buscando
+            performance, qualidade e uma excelente experiência para o usuário.
           </p>
         </motion.div>
 
-        {/* Stacks */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-3 mb-20"
+        >
+          {highlights.map((item) => (
+            <span
+              key={item}
+              className="px-4 py-2 rounded-full border border-accent/20 bg-accent/10 text-accent text-sm font-medium"
+            >
+              {item}
+            </span>
+          ))}
+        </motion.div>
+
         <div className="mb-20">
           <motion.h3
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-2xl font-bold mb-8"
+            className="flex items-center gap-3 text-2xl font-bold mb-8"
           >
-            Tecnologias Principais
+            <span className="w-6 h-px bg-accent" />
+            Tecnologias & Ferramentas
           </motion.h3>
+
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -111,6 +164,7 @@ export default function About() {
           >
             {stacks.map((stack, idx) => {
               const Icon = stack.icon;
+
               return (
                 <motion.div
                   key={idx}
@@ -118,12 +172,13 @@ export default function About() {
                     y: -5,
                     boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
                   }}
-                  className="p-4 rounded-lg border border-border hover:border-accent transition-colors cursor-pointer group"
+                  className="p-4 rounded-lg border border-border bg-card/60 backdrop-blur-sm hover:border-accent transition-colors cursor-pointer group"
                 >
                   <Icon
                     className="mb-3 text-accent group-hover:scale-110 transition-transform"
                     size={24}
                   />
+
                   <p className="font-semibold text-sm">{stack.name}</p>
                 </motion.div>
               );
@@ -131,18 +186,19 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Timeline */}
         <div>
           <motion.h3
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-2xl font-bold mb-8"
+            className="flex items-center gap-3 text-2xl font-bold mb-8"
             id="exp"
           >
+            <span className="w-6 h-px bg-accent" />
             Experiência Profissional
           </motion.h3>
+
           <div className="space-y-8">
             {timeline.map((exp, idx) => (
               <motion.div
@@ -151,18 +207,23 @@ export default function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="p-6 rounded-lg border border-border hover:border-accent hover:bg-muted/50 transition-all"
+                className="p-6 rounded-lg border border-border bg-card/60 backdrop-blur-sm hover:border-accent transition-all"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
                   <div>
                     <h4 className="text-xl font-semibold">{exp.role}</h4>
                     <p className="text-accent font-medium">{exp.company}</p>
                   </div>
+
                   <span className="text-sm text-muted-foreground">
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-muted-foreground mb-4">{exp.description}</p>
+
+                <p className="text-muted-foreground mb-4">
+                  {exp.description}
+                </p>
+
                 <div className="flex flex-wrap gap-2">
                   {exp.stack.map((tech, i) => (
                     <span

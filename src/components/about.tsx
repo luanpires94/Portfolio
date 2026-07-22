@@ -24,11 +24,22 @@ const stacks = [
   { name: "Redux Toolkit", icon: Repeat },
 ];
 
+const highlights = [
+  "React.js & Next.js",
+  "Node.js",
+  "TypeScript",
+  "REST APIs & BFF",
+  "MongoDB",
+  "AWS (Lambda, S3, CloudWatch)",
+  "Jest & Testing Library",
+  "GitFlow & Code Review",
+];
+
 const timeline = [
   {
     role: "Desenvolvedor Fullstack Pleno",
     company: "Certta",
-    period: "jan de 2026 - jun de 2026",
+    period: "jan de 2026 - Atual",
     description:
       "Desenvolvimento de aplicações Full Stack utilizando React.js no Front-end e Node.js no Back-end. Criação e consumo de APIs REST, modelagem em MongoDB, utilização de AWS (Lambda, S3 e CloudWatch), testes automatizados com Jest e Testing Library e uso de IA generativa para refatoração, geração de testes e análise de erros.",
     stack: [
@@ -74,24 +85,8 @@ const timeline = [
     period: "jan de 2022 - dez de 2022",
     description:
       "Desenvolvimento e manutenção de interfaces utilizando HTML, CSS e JavaScript, integração com APIs REST, foco em responsividade, acessibilidade e fidelidade ao design em projetos de impacto social.",
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "REST API",
-    ],
+    stack: ["HTML", "CSS", "JavaScript", "REST API"],
   },
-];
-
-const highlights = [
-  "React.js & Next.js",
-  "Node.js",
-  "TypeScript",
-  "REST APIs & BFF",
-  "MongoDB",
-  "AWS (Lambda, S3, CloudWatch)",
-  "Jest & Testing Library",
-  "GitFlow & Code Review",
 ];
 
 export default function About() {
@@ -113,8 +108,8 @@ export default function About() {
           <p className="mb-4">
             Sou Desenvolvedor Fullstack com foco em Front-end e mais de 4 anos
             de experiência construindo aplicações web modernas, escaláveis e de
-            alta performance. Atuo principalmente com React.js, Next.js e
-            TypeScript, além de desenvolver APIs e serviços utilizando Node.js.
+            alta performance. Atuo principalmente com React.js, Next.js,
+            TypeScript e Node.js.
           </p>
 
           <p>

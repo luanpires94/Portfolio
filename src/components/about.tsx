@@ -96,7 +96,7 @@ export default function About() {
       className="relative py-24 px-6 bg-background/60 backdrop-blur-sm"
     >
       <div className="max-w-6xl mx-auto">
-        <SectionHeading index="01" eyebrow="Quem sou" title="Sobre mim" />
+        <SectionHeading index="01" eyebrow="" title="Sobre mim" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,0 +1,123 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Github, ExternalLink } from "lucide-react";
+import SectionHeading from "./section-heading";
+
+type Project = {
+  title: string;
+  description: string;
+  stack: string[];
+  demo?: string;
+  repo?: string;
+  highlight?: string;
+};
+
+
+const projects: Project[] = [
+  {
+    title: "Dashboard de Produtos",
+    description:
+      "Painel administrativo com listagem de produtos consumindo API REST. Exibe visão geral (total, preço médio, categorias e itens em estoque), busca e filtro por categoria em tabela responsiva.",
+    stack: ["Next.js", "React", "SCSS Modules", "REST API"],
+    highlight: "Dashboard",
+    demo: "https://dashboard-web-one.vercel.app/",
+    repo: "https://github.com/luanpires94/dashboard-web",
+  },
+  {
+    title: "PodsRJ — Loja de Tabacaria",
+    description:
+      "E-commerce de uma tabacaria com catálogo de produtos, carrinho de compras e finalização de pedido via WhatsApp. Layout responsivo e navegação fluida.",
+    stack: ["Next.js", "React", "Tailwind CSS"],
+    highlight: "E-commerce",
+    demo: "https://podsrj-7rqo7coge-luanpires94s-projects.vercel.app/",
+    repo: "https://github.com/luanpires94/podsrj",
+  },
+  {
+    title: "SnippetVault — Cofre de Snippets",
+    description:
+      "App fullstack para salvar, organizar e buscar trechos de código. Autenticação com JWT, CRUD completo, tags e filtro por linguagem — front-end e back-end no mesmo projeto Next.js com MongoDB.",
+    stack: ["Next.js", "MongoDB", "JWT", "TypeScript"],
+    highlight: "Fullstack",
+    repo: "https://github.com/luanpires94/snippet-vault",
+  },
+];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="relative py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <SectionHeading index="02" eyebrow="" title="Projetos" />
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, idx) => (
+            <motion.article
+              key={project.title}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -6 }}
+              className="group flex flex-col rounded-xl border border-border bg-card/60 backdrop-blur-sm overflow-hidden hover:border-accent transition-colors"
+            >
+              {/* Thumbnail placeholder */}
+              <div className="relative h-40 bg-gradient-to-br from-accent/20 via-muted to-background flex items-center justify-center">
+                <span className="text-4xl font-bold text-accent/40">
+                  {project.title.charAt(0)}
+                </span>
+                {project.highlight && (
+                  <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-accent/15 text-accent text-xs font-medium">
+                    {project.highlight}
+                  </span>
+                )}
+              </div>
+
+              <div className="flex flex-col flex-1 p-6">
+                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2.5 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-3 mt-auto">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-accent transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      Demo
+                    </a>
+                  )}
+                  {project.repo && (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      <Github size={16} />
+                      Código
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,8 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import Avatar from "../assets/images/avatar.png";
+import { ChevronDown, Github, Linkedin, Mail, FolderGit2, FileDown } from "lucide-react";
+import Avatar from "../assets/images/perfil.png";
+
+const GITHUB_URL = "https://github.com/luanpires94";
+const LINKEDIN_URL = "https://www.linkedin.com/in/luanpires94/";
+const EMAIL = "luan.94pires@gmail.com";
 
 const container = {
   hidden: { opacity: 0 },
@@ -22,7 +26,24 @@ const item = {
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 pb-20 px-6">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-6 overflow-hidden">
+      {/* Background glow + grid */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-accent/20 blur-[120px]" />
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+            maskImage:
+              "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+          }}
+        />
+      </div>
+
       <div className="max-w-4xl mx-auto w-full">
         <motion.div
           variants={container}
@@ -47,31 +68,60 @@ export default function Hero() {
           {/* Headline */}
           <motion.div variants={item} className="text-center space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold text-balance">
-              Olá, sou o <span className="text-accent">Luan Pires</span>
+              Olá, sou o <span className="text-accent">Luan</span>
             </h1>
+            <p className="text-lg md:text-xl font-medium text-muted-foreground">
+              Desenvolvedor{" "}
+              <span className="text-foreground font-semibold">Fullstack</span>
+            </p>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Especialista em{" "}
-              <span className="text-foreground font-semibold">React</span>, com
-              domínio do ecossistema moderno (
-              <span className="text-foreground font-semibold">
-                Hooks, Context, Redux, Next.js, Routes
-              </span>
-              ). Desenvolvo interfaces modernas, escaláveis e otimizadas para
-              produtos digitais de diferentes segmentos.
+              Construo aplicações web completas — do{" "}
+              <span className="text-foreground font-semibold">front-end</span> em
+              React e Next.js ao{" "}
+              <span className="text-foreground font-semibold">back-end</span> com
+              Node.js, APIs REST e banco de dados. Foco em interfaces modernas,
+              código escalável e alta performance de ponta a ponta.
             </p>
+          </motion.div>
+
+          {/* CTAs */}
+          <motion.div
+            variants={item}
+            className="flex flex-col sm:flex-row gap-4 justify-center pt-4"
+          >
+            <motion.a
+              href="#projects"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-accent text-background font-semibold transition-shadow hover:shadow-[0_0_24px_rgba(0,217,255,0.4)]"
+            >
+              <FolderGit2 size={20} />
+              Ver projetos
+            </motion.a>
+            <motion.a
+              href="/cv-luan-pires.pdf"
+              download
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-accent/40 text-accent font-semibold hover:border-accent hover:bg-accent/10 transition-colors"
+            >
+              <FileDown size={20} />
+              Baixar CV
+            </motion.a>
           </motion.div>
 
           {/* Social Links */}
           <motion.div
             variants={item}
-            className="flex gap-4 justify-center pt-8"
+            className="flex gap-4 justify-center pt-4"
           >
             <motion.a
-              href="https://github.com"
+              href={GITHUB_URL}
+              aria-label="GitHub"
               whileHover={{ scale: 1.2, color: "#00d9ff" }}
               className="p-3 rounded-lg border border-border hover:border-accent transition-colors"
               target="_blank"
@@ -80,7 +130,8 @@ export default function Hero() {
               <Github size={24} />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href={LINKEDIN_URL}
+              aria-label="LinkedIn"
               whileHover={{ scale: 1.2, color: "#00d9ff" }}
               className="p-3 rounded-lg border border-border hover:border-accent transition-colors"
               target="_blank"
@@ -89,11 +140,10 @@ export default function Hero() {
               <Linkedin size={24} />
             </motion.a>
             <motion.a
-              href="mailto:luan.94pires@gmail.com"
+              href={`mailto:${EMAIL}`}
+              aria-label="Email"
               whileHover={{ scale: 1.2, color: "#00d9ff" }}
               className="p-3 rounded-lg border border-border hover:border-accent transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Mail size={24} />
             </motion.a>

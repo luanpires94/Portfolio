@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -38,8 +38,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               {[
                 { label: "Sobre", href: "#about" },
+                { label: "Experiência", href: "#exp" },
                 { label: "Projetos", href: "#projects" },
-                { label: "Experiência", href: "#experience" },
                 { label: "Contato", href: "#contact" },
               ].map((link) => (
                 <li key={link.href}>
@@ -109,14 +109,11 @@ export default function Footer() {
           className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground"
         >
           <p>© {currentYear} Luan Pires. Todos os direitos reservados.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-accent transition-colors">
-              Privacidade
-            </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              Termos
-            </a>
-          </div>
+          <p>
+            Feito com <span className="text-accent">React</span>,{" "}
+            <span className="text-accent">Tailwind</span> &{" "}
+            <span className="text-accent">Framer Motion</span>
+          </p>
         </motion.div>
       </div>
     </footer>

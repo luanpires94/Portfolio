@@ -121,6 +121,34 @@ export default function About() {
           </p>
         </motion.div>
 
+        {/* Metrics */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
+        >
+          {[
+            { value: "4+", label: "Anos de experiência" },
+            { value: "4", label: "Empresas" },
+            { value: "10+", label: "Tecnologias" },
+            { value: "100%", label: "Foco em performance" },
+          ].map((metric) => (
+            <div
+              key={metric.label}
+              className="p-5 rounded-xl border border-border bg-card/60 backdrop-blur-sm text-center"
+            >
+              <p className="text-3xl md:text-4xl font-bold text-accent">
+                {metric.value}
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                {metric.label}
+              </p>
+            </div>
+          ))}
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

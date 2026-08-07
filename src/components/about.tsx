@@ -10,12 +10,16 @@ import {
   Wind,
   Settings,
   Repeat,
+  Triangle,
+  Shield,
 } from "lucide-react";
 import SectionHeading from "./section-heading";
 
 const stacks = [
   { name: "React.js", icon: Atom },
   { name: "Next.js", icon: Network },
+  { name: "Vue.js", icon: Triangle },
+  { name: "Angular", icon: Shield },
   { name: "TypeScript", icon: Code2 },
   { name: "Node.js", icon: Settings },
   { name: "MongoDB", icon: Target },
@@ -26,6 +30,7 @@ const stacks = [
 
 const highlights = [
   "React.js & Next.js",
+  "Vue.js & Angular",
   "Node.js",
   "TypeScript",
   "REST APIs & BFF",
@@ -118,6 +123,8 @@ export default function About() {
             APIs REST/BFF, MongoDB, AWS, testes automatizados,
             componentização e boas práticas de arquitetura, sempre buscando
             performance, qualidade e uma excelente experiência para o usuário.
+            Também tenho conhecimento em Vue.js e Angular, o que me dá
+            flexibilidade para atuar em diferentes ecossistemas de front-end.
           </p>
         </motion.div>
 

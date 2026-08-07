@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import SectionHeading from "./section-heading";
 
 type Project = {
   title: string;
   description: string;
   stack: string[];
+  demo?: string;
   repo?: string;
   highlight?: string;
 };
@@ -28,6 +29,7 @@ const projects: Project[] = [
       "Painel administrativo com listagem de produtos consumindo API REST. Exibe visão geral (total, preço médio, categorias e itens em estoque), busca e filtro por categoria em tabela responsiva.",
     stack: ["Next.js", "React", "SCSS Modules", "REST API"],
     highlight: "Dashboard",
+    demo: "https://dashboard-web-one.vercel.app/",
     repo: "https://github.com/luanpires94/dashboard-web",
   },
   {
@@ -36,6 +38,7 @@ const projects: Project[] = [
       "App fullstack para salvar, organizar e buscar trechos de código. Autenticação com JWT, CRUD completo, tags e filtro por linguagem — front-end e back-end no mesmo projeto Next.js com MongoDB.",
     stack: ["Next.js", "MongoDB", "JWT", "TypeScript"],
     highlight: "Fullstack",
+    demo: "https://snippet-vault-olive.vercel.app/",
     repo: "https://github.com/luanpires94/snippet-vault",
   },
   {
@@ -44,6 +47,7 @@ const projects: Project[] = [
       "Landing page de um app de treino com visual escuro e energético. Hero com mockup de app em CSS puro, seções de recursos, programas e planos com toggle mensal/anual reativo. Componentizada e responsiva.",
     stack: ["Vue 3", "Vite", "CSS"],
     highlight: "Vue.js",
+    demo: "https://pulse-gilt-five.vercel.app/",
     repo: "https://github.com/luanpires94/pulse",
   },
   {
@@ -52,6 +56,7 @@ const projects: Project[] = [
       "Landing page de uma plataforma de cursos online, com visual claro e profissional. Standalone components e signals para estado reativo (planos, busca e navbar dinâmica). Sintaxe moderna @for/@if nos templates.",
     stack: ["Angular", "TypeScript", "Signals"],
     highlight: "Angular",
+    demo: "https://cortex-nine-fawn.vercel.app/",
     repo: "https://github.com/luanpires94/cortex",
   },
 ];
@@ -103,6 +108,17 @@ export default function Projects() {
                 </div>
 
                 <div className="flex gap-3 mt-auto">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-accent transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      Demo
+                    </a>
+                  )}
                   {project.repo && (
                     <a
                       href={project.repo}

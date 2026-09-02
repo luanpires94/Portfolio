@@ -16,30 +16,30 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "DevPocket — Snippets no Bolso",
-    description:
-      "App mobile para desenvolvedores salvarem, organizarem e reutilizarem snippets de código direto no celular. Syntax highlighting para mais de 20 linguagens, organização por tags, busca avançada, temas claro/escuro e i18n (PT/EN).",
-    stack: ["React Native", "Expo", "TypeScript", "Zustand"],
-    highlight: "Mobile",
-    repo: "https://github.com/luanpires94/devpocket",
-  },
-  {
     title: "Dashboard de Produtos",
     description:
       "Painel administrativo com listagem de produtos consumindo API REST. Exibe visão geral (total, preço médio, categorias e itens em estoque), busca e filtro por categoria em tabela responsiva.",
     stack: ["Next.js", "React", "SCSS Modules", "REST API"],
-    highlight: "Dashboard",
+    highlight: "Next.js",
     demo: "https://dashboard-web-one.vercel.app/",
     repo: "https://github.com/luanpires94/dashboard-web",
   },
   {
     title: "SnippetVault — Cofre de Snippets",
     description:
-      "App fullstack para salvar, organizar e buscar trechos de código. Autenticação com JWT, CRUD completo, tags e filtro por linguagem — front-end e back-end no mesmo projeto Next.js com MongoDB.",
+      "Interface em Next.js para salvar, organizar e buscar trechos de código, com tags e filtro por linguagem. O projeto integra front-end e back-end, com autenticação JWT e persistência em MongoDB.",
     stack: ["Next.js", "MongoDB", "JWT", "TypeScript"],
-    highlight: "Fullstack",
+    highlight: "React & Next.js",
     demo: "https://snippet-vault-olive.vercel.app/",
     repo: "https://github.com/luanpires94/snippet-vault",
+  },
+  {
+    title: "DevPocket — Snippets no Bolso",
+    description:
+      "Experiência mobile para salvar, organizar e reutilizar snippets de código. Inclui syntax highlighting para mais de 20 linguagens, busca avançada, temas claro/escuro e internacionalização em português e inglês.",
+    stack: ["React Native", "Expo", "TypeScript", "Zustand"],
+    highlight: "Ecossistema React",
+    repo: "https://github.com/luanpires94/devpocket",
   },
   {
     title: "Pulse — Landing de App Fitness",
@@ -65,7 +65,12 @@ export default function Projects() {
   return (
     <section id="projects" className="relative py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading index="02" eyebrow="" title="Projetos" />
+        <SectionHeading index="02" eyebrow="" title="Projetos em destaque" />
+
+        <p className="max-w-2xl -mt-8 mb-10 text-muted-foreground leading-relaxed">
+          Uma seleção de interfaces e produtos que demonstram componentização,
+          responsividade, integração com APIs e domínio de diferentes ecossistemas front-end.
+        </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (

@@ -1,6 +1,6 @@
 # Portfólio — Luan Pires
 
-Portfólio pessoal de **Luan Pires**, Desenvolvedor Fullstack com foco em Front-end. Uma single-page application moderna, responsiva e com foco em performance, apresentando trajetória profissional, stack técnica e projetos.
+Portfólio pessoal de **Luan Pires**, Desenvolvedor Front-end especializado em React.js, Next.js e TypeScript. Uma single-page application moderna, responsiva e com foco em performance, acessibilidade e UX, apresentando trajetória profissional, stack técnica e projetos.
 
 🔗 **Contato:** [LinkedIn](https://www.linkedin.com/in/luanpires94/) · [GitHub](https://github.com/luanpires94) · luan.94pires@gmail.com
 
@@ -10,7 +10,7 @@ Portfólio pessoal de **Luan Pires**, Desenvolvedor Fullstack com foco em Front-
 
 Site de página única (SPA) construído com React + Vite, dividido em seções que contam a história profissional e técnica:
 
-- **Hero** — apresentação, chamada para ação e download do CV.
+- **Hero** — posicionamento Front-end, projetos e contato.
 - **Sobre mim** — resumo, métricas de carreira, tecnologias e linha do tempo de experiências (Certta, Fiotec/Fiocruz, PagBank, Instituto Precisa Ser).
 - **Projetos** — cards com stack, demo ao vivo e link para o repositório.
 - **Contato** — canais diretos de contato.

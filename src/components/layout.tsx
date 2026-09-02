@@ -6,7 +6,7 @@ import "./globals.css";
 const _geistSans = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Luan Pires | Frontend Developer Pleno",
+  title: "Luan Pires | Desenvolvedor Front-end",
   description:
     "Portfolio profissional de Luan Pires - Desenvolvedor Frontend especializado em React, TypeScript e Next.js. Experiência com fintech e projetos escaláveis.",
   keywords: [

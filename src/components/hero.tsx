@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, Github, Linkedin, Mail, FolderGit2, FileDown } from "lucide-react";
+import { ChevronDown, Github, Linkedin, Mail, FolderGit2 } from "lucide-react";
 import Avatar from "../assets/images/perfil.png";
 
 const GITHUB_URL = "https://github.com/luanpires94";
@@ -59,7 +59,7 @@ export default function Hero() {
             >
               <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
                 <span className="text-5xl font-bold text-accent">
-                  <img className="rounded-full" src={Avatar} alt="Avatar" />
+                  <img className="rounded-full" src={Avatar} alt="Luan Pires" />
                 </span>
               </div>
             </motion.div>
@@ -72,19 +72,17 @@ export default function Hero() {
             </h1>
             <p className="text-lg md:text-xl font-medium text-muted-foreground">
               Desenvolvedor{" "}
-              <span className="text-foreground font-semibold">Fullstack</span>
+              <span className="text-foreground font-semibold">Front-end</span>
             </p>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Construo aplicações web completas — do{" "}
-              <span className="text-foreground font-semibold">front-end</span> em
-              React e Next.js ao{" "}
-              <span className="text-foreground font-semibold">back-end</span> com
-              Node.js, APIs REST e banco de dados. Foco em interfaces modernas,
-              código escalável e alta performance de ponta a ponta.
+              Construo interfaces modernas, responsivas e acessíveis com{" "}
+              <span className="text-foreground font-semibold">React.js, Next.js e TypeScript</span>.
+              Transformo necessidades de produto em experiências rápidas, intuitivas
+              e sustentáveis, com foco em performance, qualidade de código e UX.
             </p>
           </motion.div>
 
@@ -103,14 +101,13 @@ export default function Hero() {
               Ver projetos
             </motion.a>
             <motion.a
-              href="/cv-luan-pires.pdf"
-              download
+              href="#contact"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-accent/40 text-accent font-semibold hover:border-accent hover:bg-accent/10 transition-colors"
             >
-              <FileDown size={20} />
-              Baixar CV
+              <Mail size={20} />
+              Vamos conversar
             </motion.a>
           </motion.div>
 

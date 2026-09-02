@@ -3,14 +3,11 @@
 import { motion } from "framer-motion";
 import {
   Code2,
-  Zap,
   Target,
   Atom,
   Network,
   Wind,
-  Settings,
   Repeat,
-  Triangle,
   Shield,
 } from "lucide-react";
 import SectionHeading from "./section-heading";
@@ -18,24 +15,21 @@ import SectionHeading from "./section-heading";
 const stacks = [
   { name: "React.js", icon: Atom },
   { name: "Next.js", icon: Network },
-  { name: "Vue.js", icon: Triangle },
-  { name: "Angular", icon: Shield },
   { name: "TypeScript", icon: Code2 },
-  { name: "Node.js", icon: Settings },
-  { name: "MongoDB", icon: Target },
-  { name: "AWS", icon: Zap },
-  { name: "Tailwind", icon: Wind },
+  { name: "JavaScript", icon: Code2 },
+  { name: "Acessibilidade", icon: Shield },
+  { name: "Testes", icon: Target },
+  { name: "Tailwind CSS", icon: Wind },
   { name: "Redux Toolkit", icon: Repeat },
 ];
 
 const highlights = [
   "React.js & Next.js",
-  "Vue.js & Angular",
-  "Node.js",
   "TypeScript",
+  "Interfaces responsivas",
+  "Acessibilidade & UX",
+  "Performance web",
   "REST APIs & BFF",
-  "MongoDB",
-  "AWS (Lambda, S3, CloudWatch)",
   "Jest & Testing Library",
   "GitFlow & Code Review",
 ];
@@ -46,14 +40,13 @@ const timeline = [
     company: "Certta",
     period: "jan de 2026 - Atual",
     description:
-      "Desenvolvimento de aplicações Full Stack utilizando React.js no Front-end e Node.js no Back-end. Criação e consumo de APIs REST, modelagem em MongoDB, utilização de AWS (Lambda, S3 e CloudWatch), testes automatizados com Jest e Testing Library e uso de IA generativa para refatoração, geração de testes e análise de erros.",
+      "Atuação principal na evolução do front-end com React.js e TypeScript, criando componentes reutilizáveis, integrando APIs REST e aprimorando qualidade com refatorações e testes automatizados. Colaboração pontual em serviços Node.js, MongoDB e AWS ampliou minha visão do produto de ponta a ponta.",
     stack: [
       "React",
-      "Node.js",
-      "MongoDB",
-      "AWS",
+      "TypeScript",
       "Jest",
       "Testing Library",
+      "REST API",
     ],
   },
   {
@@ -111,20 +104,19 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Sou Desenvolvedor Fullstack com foco em Front-end e mais de 4 anos
-            de experiência construindo aplicações web modernas, escaláveis e de
-            alta performance. Atuo principalmente com React.js, Next.js,
-            TypeScript e Node.js.
+            Sou Desenvolvedor Front-end com mais de 4 anos de experiência
+            na construção e evolução de aplicações web com React.js, Next.js,
+            TypeScript e JavaScript.
           </p>
 
           <p>
-            Ao longo da minha carreira participei de projetos em fintechs e
-            instituições de grande impacto social, trabalhando com integração de
-            APIs REST/BFF, MongoDB, AWS, testes automatizados,
-            componentização e boas práticas de arquitetura, sempre buscando
-            performance, qualidade e uma excelente experiência para o usuário.
-            Também tenho conhecimento em Vue.js e Angular, o que me dá
-            flexibilidade para atuar em diferentes ecossistemas de front-end.
+            Atuei no PagBank e em projetos institucionais ligados à Fiocruz,
+            trabalhando com integração de
+            APIs REST e BFF, testes automatizados, componentização e boas
+            práticas de arquitetura. Meu foco está em criar interfaces
+            responsivas e acessíveis, com qualidade de código, performance e
+            uma excelente experiência para o usuário. A vivência complementar
+            com Node.js, MongoDB e AWS amplia minha colaboração com times de produto.
           </p>
         </motion.div>
 
@@ -134,13 +126,12 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16"
         >
           {[
             { value: "4+", label: "Anos de experiência" },
             { value: "4", label: "Empresas" },
-            { value: "10+", label: "Tecnologias" },
-            { value: "100%", label: "Foco em performance" },
+            { value: "Frontend", label: "Especialidade principal" },
           ].map((metric) => (
             <div
               key={metric.label}
@@ -182,7 +173,7 @@ export default function About() {
             className="flex items-center gap-3 text-2xl font-bold mb-8"
           >
             <span className="w-6 h-px bg-accent" />
-            Tecnologias & Ferramentas
+            Especialidades & Ferramentas
           </motion.h3>
 
           <motion.div
@@ -214,6 +205,10 @@ export default function About() {
               );
             })}
           </motion.div>
+          <p className="mt-6 text-sm text-muted-foreground leading-relaxed max-w-3xl">
+            Conhecimentos complementares: Vue.js e Angular em projetos de interface;
+            Node.js, MongoDB e AWS na colaboração com back-end e infraestrutura.
+          </p>
         </div>
 
         <div>

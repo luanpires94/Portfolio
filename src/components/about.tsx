@@ -9,6 +9,16 @@ import {
   Wind,
   Repeat,
   Shield,
+  Server,
+  Database,
+  Cloud,
+  GitBranch,
+  Plug,
+  Triangle,
+  Boxes,
+  FileCode2,
+  Paintbrush,
+  Layers,
 } from "lucide-react";
 import SectionHeading from "./section-heading";
 
@@ -17,21 +27,23 @@ const stacks = [
   { name: "Next.js", icon: Network },
   { name: "TypeScript", icon: Code2 },
   { name: "JavaScript", icon: Code2 },
-  { name: "Acessibilidade", icon: Shield },
-  { name: "Testes", icon: Target },
+  { name: "Angular", icon: Shield },
+  { name: "Vue.js", icon: Triangle },
+  { name: "HTML5", icon: FileCode2 },
+  { name: "CSS3", icon: Paintbrush },
   { name: "Tailwind CSS", icon: Wind },
+  { name: "Sass", icon: Paintbrush },
+  { name: "Styled Components", icon: Layers },
+  { name: "Bootstrap", icon: Boxes },
   { name: "Redux Toolkit", icon: Repeat },
-];
-
-const highlights = [
-  "React.js & Next.js",
-  "TypeScript",
-  "Interfaces responsivas",
-  "Acessibilidade & UX",
-  "Performance web",
-  "REST APIs & BFF",
-  "Jest & Testing Library",
-  "GitFlow & Code Review",
+  { name: "Node.js", icon: Server },
+  { name: "APIs REST & BFF", icon: Plug },
+  { name: "MongoDB", icon: Database },
+  { name: "AWS", icon: Cloud },
+  { name: "Jest", icon: Target },
+  { name: "Testing Library", icon: Target },
+  { name: "Git & GitFlow", icon: GitBranch },
+  { name: "Acessibilidade web", icon: Shield },
 ];
 
 const timeline = [
@@ -40,7 +52,7 @@ const timeline = [
     company: "Certta",
     period: "jan de 2026 - Atual",
     description:
-      "Atuação principal na evolução do front-end com React.js e TypeScript, criando componentes reutilizáveis, integrando APIs REST e aprimorando qualidade com refatorações e testes automatizados. Colaboração pontual em serviços Node.js, MongoDB e AWS ampliou minha visão do produto de ponta a ponta.",
+      "Desenvolvimento e evolução de aplicações web com React.js e TypeScript, criação de componentes reutilizáveis, integração com APIs REST, refatoração e testes automatizados. Atuação também com serviços em Node.js, MongoDB e AWS, contribuindo com o fluxo completo do produto.",
     stack: [
       "React",
       "TypeScript",
@@ -104,64 +116,28 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Sou Desenvolvedor Front-end com mais de 4 anos de experiência
-            na construção e evolução de aplicações web com React.js, Next.js,
-            TypeScript e JavaScript.
+            Desenvolvedor Full Stack atuando no desenvolvimento e evolução de
+            aplicações web com React.js, Next.js, TypeScript e Node.js.
           </p>
 
           <p>
-            Atuei no PagBank e em projetos institucionais ligados à Fiocruz,
-            trabalhando com integração de
-            APIs REST e BFF, testes automatizados, componentização e boas
-            práticas de arquitetura. Meu foco está em criar interfaces
-            responsivas e acessíveis, com qualidade de código, performance e
-            uma excelente experiência para o usuário. A vivência complementar
-            com Node.js, MongoDB e AWS amplia minha colaboração com times de produto.
+            Atuei em projetos no PagBank e Fiocruz, desenvolvendo soluções web,
+            interfaces responsivas e acessíveis, componentes reutilizáveis,
+            APIs REST e integrações com serviços BFF.
           </p>
-        </motion.div>
 
-        {/* Metrics */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-16"
-        >
-          {[
-            { value: "4+", label: "Anos de experiência" },
-            { value: "4", label: "Empresas" },
-            { value: "Frontend", label: "Especialidade principal" },
-          ].map((metric) => (
-            <div
-              key={metric.label}
-              className="p-5 rounded-xl border border-border bg-card/60 backdrop-blur-sm text-center"
-            >
-              <p className="text-3xl md:text-4xl font-bold text-accent">
-                {metric.value}
-              </p>
-              <p className="text-sm text-muted-foreground mt-1">
-                {metric.label}
-              </p>
-            </div>
-          ))}
-        </motion.div>
+          <p className="mt-4">
+            Tenho experiência com JavaScript/TypeScript, React.js, Next.js,
+            Angular, Node.js, MongoDB e AWS, atuando desde a construção de
+            interfaces e gerenciamento de estado até desenvolvimento de APIs,
+            regras de negócio, persistência de dados e integrações entre sistemas.
+          </p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="flex flex-wrap gap-3 mb-20"
-        >
-          {highlights.map((item) => (
-            <span
-              key={item}
-              className="px-4 py-2 rounded-full border border-accent/20 bg-accent/10 text-accent text-sm font-medium"
-            >
-              {item}
-            </span>
-          ))}
+          <p className="mt-4">
+            Também trabalho com testes automatizados utilizando Jest e Testing
+            Library, Git, code review e práticas de desenvolvimento em times
+            ágeis, participando do ciclo de desenvolvimento e evolução das aplicações.
+          </p>
         </motion.div>
 
         <div className="mb-20">
@@ -173,7 +149,7 @@ export default function About() {
             className="flex items-center gap-3 text-2xl font-bold mb-8"
           >
             <span className="w-6 h-px bg-accent" />
-            Especialidades & Ferramentas
+            Tecnologias & Ferramentas
           </motion.h3>
 
           <motion.div
@@ -183,12 +159,12 @@ export default function About() {
             viewport={{ once: true }}
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
           >
-            {stacks.map((stack, idx) => {
+            {stacks.map((stack) => {
               const Icon = stack.icon;
 
               return (
                 <motion.div
-                  key={idx}
+                  key={stack.name}
                   whileHover={{
                     y: -5,
                     boxShadow: "0 0 20px rgba(0, 217, 255, 0.2)",
@@ -205,10 +181,6 @@ export default function About() {
               );
             })}
           </motion.div>
-          <p className="mt-6 text-sm text-muted-foreground leading-relaxed max-w-3xl">
-            Conhecimentos complementares: Vue.js e Angular em projetos de interface;
-            Node.js, MongoDB e AWS na colaboração com back-end e infraestrutura.
-          </p>
         </div>
 
         <div>

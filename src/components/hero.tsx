@@ -72,17 +72,17 @@ export default function Hero() {
             </h1>
             <p className="text-lg md:text-xl font-medium text-muted-foreground">
               Desenvolvedor{" "}
-              <span className="text-foreground font-semibold">Front-end</span>
+              <span className="text-foreground font-semibold">Full Stack</span>
             </p>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Construo interfaces modernas, responsivas e acessíveis com{" "}
-              <span className="text-foreground font-semibold">React.js, Next.js e TypeScript</span>.
-              Transformo necessidades de produto em experiências rápidas, intuitivas
-              e sustentáveis, com foco em performance, qualidade de código e UX.
+              Desenvolvo aplicações web com{" "}
+              <span className="text-foreground font-semibold">React.js, Next.js e TypeScript</span>,
+              além de experiência com Node.js, APIs REST, MongoDB e AWS — da
+              interface aos serviços e dados.
             </p>
           </motion.div>
 

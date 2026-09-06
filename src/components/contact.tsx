@@ -31,9 +31,9 @@ export default function Contact() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Informações de Contato</h3>
               <p className="text-muted-foreground">
-                Estou aberto a oportunidades como Desenvolvedor Front-end,
-                especialmente em produtos com React.js, Next.js e TypeScript.
-                Vamos conversar sobre o seu próximo desafio.
+                Estou aberto a oportunidades como Desenvolvedor Full Stack,
+                trabalhando com React.js, Next.js, TypeScript e Node.js. Vamos
+                conversar sobre o seu próximo desafio.
               </p>
             </div>
 

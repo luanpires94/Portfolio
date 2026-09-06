@@ -29,7 +29,7 @@ const projects: Project[] = [
     description:
       "Interface em Next.js para salvar, organizar e buscar trechos de código, com tags e filtro por linguagem. O projeto integra front-end e back-end, com autenticação JWT e persistência em MongoDB.",
     stack: ["Next.js", "MongoDB", "JWT", "TypeScript"],
-    highlight: "React & Next.js",
+    highlight: "Full Stack",
     demo: "https://snippet-vault-olive.vercel.app/",
     repo: "https://github.com/luanpires94/snippet-vault",
   },

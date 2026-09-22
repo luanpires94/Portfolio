@@ -50,52 +50,94 @@ const timeline = [
   {
     role: "Desenvolvedor Fullstack Pleno",
     company: "Certta",
-    period: "jan de 2026 - Atual",
+    employment: "Terceirizado",
+    period: "jan de 2026 - ago de 2026 · 8 meses",
+    location: "Remoto",
     description:
-      "Desenvolvimento e evolução de aplicações web com React.js e TypeScript, criação de componentes reutilizáveis, integração com APIs REST, refatoração e testes automatizados. Atuação também com serviços em Node.js, MongoDB e AWS, contribuindo com o fluxo completo do produto.",
+      "Atuei no desenvolvimento e evolução de aplicações web full stack, unindo front-end (React.js, Angular, TypeScript) e back-end (Node.js, MongoDB, AWS) em ambiente ágil (Scrum/Kanban).",
+    activities: [
+      "Desenvolvimento de interfaces e funcionalidades com React.js, Angular e TypeScript, com componentização e reutilização.",
+      "Projetei e consumi APIs REST com autenticação baseada em token, modelando e otimizando coleções no MongoDB.",
+      "Implementei e monitorei infraestrutura AWS (Lambda, S3, CloudWatch), incluindo processamento serverless e observabilidade.",
+      "Escrevi e mantive testes automatizados (unitários e de integração) com Jest e Testing Library, reduzindo regressões em produção.",
+      "Apliquei IA generativa (Cursor, Claude) em refatoração, geração de testes e análise de erros.",
+      "Configurei e mantive pipelines de CI/CD com GitHub Actions, automatizando build, testes e deploy.",
+    ],
     stack: [
-      "React",
+      "React.js",
+      "Angular",
       "TypeScript",
-      "Jest",
-      "Testing Library",
-      "REST API",
+      "Node.js",
+      "MongoDB",
+      "AWS",
+      "GitHub Actions",
     ],
   },
   {
-    role: "Desenvolvedor Front-end Pleno",
+    role: "Desenvolvedor Front End Pleno",
     company: "Fiotec - Fundação de Apoio à Fiocruz",
-    period: "jan de 2025 - jan de 2026",
+    employment: "Terceirizado",
+    period: "jan de 2025 - jan de 2026 · 1 ano 1 mês",
+    location: "Rio de Janeiro, Brasil · Híbrido",
     description:
-      "Desenvolvimento de interfaces responsivas e acessíveis com React.js para projetos institucionais da Fiocruz. Atuação na arquitetura componentizada, integração com APIs REST, aplicação de boas práticas de UX/UI, GitFlow, code review e metodologias ágeis.",
+      "Atuei como Desenvolvedor Front End em projetos institucionais de grande impacto, contribuindo para a construção e evolução de aplicações web modernas, escaláveis e acessíveis, alinhadas às necessidades de diferentes áreas da Fiocruz.",
+    activities: [
+      "Desenvolvimento e manutenção de interfaces web utilizando React.js, com foco em componentização, reutilização e performance.",
+      "Criação e evolução de arquitetura front-end, garantindo organização, escalabilidade e facilidade de manutenção.",
+      "Implementação de layouts responsivos e acessíveis, seguindo boas práticas de UX/UI e padrões de acessibilidade.",
+      "Integração com APIs REST, consumindo dados dinâmicos e garantindo uma boa experiência para o usuário final.",
+      "Atuação com versionamento Git seguindo fluxo GitFlow, participando ativamente de code reviews.",
+      "Colaboração próxima com times multidisciplinares, participando de cerimônias ágeis, alinhamentos técnicos e planejamento de entregas.",
+    ],
     stack: [
-      "React",
-      "Styled Components",
-      "REST API",
-      "Bootstrap",
+      "React.js",
+      "JavaScript",
+      "APIs REST",
       "GitFlow",
+      "UX/UI",
+      "Acessibilidade",
     ],
   },
   {
-    role: "Desenvolvedor Front-end Pleno",
+    role: "Desenvolvedor Front End Pleno",
     company: "PagBank",
-    period: "jan de 2023 - jan de 2025",
+    employment: "Terceirizado",
+    period: "jan de 2023 - jan de 2025 · 2 anos 1 mês",
+    location: "Remoto",
     description:
-      "Desenvolvimento de aplicações de alta performance utilizando Next.js, TypeScript e Sass. Atuação no portal de notícias, integração via arquitetura BFF, componentização de interfaces, otimização de performance e colaboração em squads ágeis.",
+      "Atuei como Desenvolvedor Front End Pleno no PagBank, uma das maiores fintechs do Brasil. Desenvolvi interfaces modernas e de alta performance utilizando Next.js, TypeScript e Sass, com forte foco em usabilidade, componentização e integração via arquitetura BFF.",
+    activities: [
+      "Desenvolvimento de aplicações web modernas e escaláveis com Next.js, TypeScript e Sass.",
+      "Integração de APIs utilizando arquitetura BFF (Backend for Frontend).",
+      "Implementação de boas práticas: clean code, componentização, reuso e otimização.",
+      "Colaboração com squads multidisciplinares em ambiente ágil (Scrum).",
+      "Versionamento, code review e fluxo Git/GitFlow.",
+    ],
     stack: [
-      "React",
       "Next.js",
       "TypeScript",
-      "SASS",
+      "Sass",
       "BFF",
+      "GitFlow",
+      "Scrum",
     ],
   },
   {
-    role: "Desenvolvedor Front-end Júnior",
+    role: "Desenvolvedor Front End Júnior",
     company: "Instituto Precisa Ser",
-    period: "jan de 2022 - dez de 2022",
+    employment: "Tempo integral",
+    period: "jan de 2021 - dez de 2021 · 1 ano",
+    location: "Rio de Janeiro, Brasil",
     description:
-      "Desenvolvimento e manutenção de interfaces utilizando HTML, CSS e JavaScript, integração com APIs REST, foco em responsividade, acessibilidade e fidelidade ao design em projetos de impacto social.",
-    stack: ["HTML", "CSS", "JavaScript", "REST API"],
+      "Atuei como Desenvolvedor Front End Júnior no Instituto Precisa Ser, organização que desenvolve soluções digitais voltadas ao impacto social. Contribuí no desenvolvimento de interfaces utilizando HTML, CSS e JavaScript, priorizando acessibilidade, responsividade e fidelidade ao design.",
+    activities: [
+      "Desenvolvimento e manutenção de interfaces com HTML, CSS e JavaScript.",
+      "Implementação de layouts fiéis ao design, equilibrando estética e funcionalidade.",
+      "Integrações básicas com APIs para exibição de dados dinâmicos.",
+      "Otimização de performance e acessibilidade.",
+      "Atuação colaborativa, aprimorando habilidades técnicas e comunicação.",
+    ],
+    stack: ["JavaScript", "HTML5", "CSS3", "APIs REST", "Acessibilidade"],
   },
 ];
 
@@ -209,17 +251,32 @@ export default function About() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
                   <div>
                     <h4 className="text-xl font-semibold">{exp.role}</h4>
-                    <p className="text-accent font-medium">{exp.company}</p>
+                    <p className="text-accent font-medium">
+                      {exp.company} · {exp.employment}
+                    </p>
                   </div>
 
-                  <span className="text-sm text-muted-foreground">
-                    {exp.period}
-                  </span>
+                  <div className="mt-2 md:mt-0 md:text-right text-sm text-muted-foreground">
+                    <p>{exp.period}</p>
+                    <p>{exp.location}</p>
+                  </div>
                 </div>
 
                 <p className="text-muted-foreground mb-4">
                   {exp.description}
                 </p>
+
+                <div className="mb-5">
+                  <p className="font-medium mb-2">Atividades:</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {exp.activities.map((activity) => (
+                      <li key={activity} className="flex gap-3">
+                        <span className="text-accent" aria-hidden="true">•</span>
+                        <span>{activity}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 <div className="flex flex-wrap gap-2">
                   {exp.stack.map((tech, i) => (

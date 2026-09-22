@@ -31,9 +31,8 @@ export default function Contact() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Informações de Contato</h3>
               <p className="text-muted-foreground">
-                Estou aberto a oportunidades como Desenvolvedor Full Stack,
-                trabalhando com React.js, Next.js, TypeScript e Node.js. Vamos
-                conversar sobre o seu próximo desafio.
+                Estou aberto a oportunidades como Desenvolvedor Fullstack, em
+                modelos remoto ou híbrido. Vamos conversar sobre o seu próximo desafio.
               </p>
             </div>
 
@@ -71,7 +70,7 @@ export default function Contact() {
                 <MapPin className="text-accent mt-1" size={24} />
                 <div>
                   <h4 className="font-semibold">Localização</h4>
-                  <p className="text-muted-foreground">Rio de Janeiro</p>
+                  <p className="text-muted-foreground">Rio de Janeiro – RJ</p>
                 </div>
               </div>
             </motion.div>

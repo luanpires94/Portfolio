@@ -68,8 +68,9 @@ export default function Projects() {
         <SectionHeading index="02" eyebrow="" title="Projetos em destaque" />
 
         <p className="max-w-2xl -mt-8 mb-10 text-muted-foreground leading-relaxed">
-          Uma seleção de interfaces e produtos que demonstram componentização,
-          responsividade, integração com APIs e domínio de diferentes ecossistemas front-end.
+          Uma seleção de produtos que demonstra atuação full stack,
+          componentização, responsividade, autenticação, integração com APIs
+          e domínio de diferentes ecossistemas web e mobile.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

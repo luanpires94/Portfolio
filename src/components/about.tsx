@@ -19,6 +19,8 @@ import {
   FileCode2,
   Paintbrush,
   Layers,
+  Smartphone,
+  Workflow,
 } from "lucide-react";
 import SectionHeading from "./section-heading";
 
@@ -36,12 +38,17 @@ const stacks = [
   { name: "Styled Components", icon: Layers },
   { name: "Bootstrap", icon: Boxes },
   { name: "Redux Toolkit", icon: Repeat },
+  { name: "Zustand", icon: Repeat },
   { name: "Node.js", icon: Server },
-  { name: "APIs REST & BFF", icon: Plug },
+  { name: "APIs REST, GraphQL & BFF", icon: Plug },
   { name: "MongoDB", icon: Database },
-  { name: "AWS", icon: Cloud },
+  { name: "AWS: Lambda, S3 & CloudWatch", icon: Cloud },
+  { name: "JWT & OAuth2", icon: Shield },
+  { name: "React Native & Expo", icon: Smartphone },
   { name: "Jest", icon: Target },
   { name: "Testing Library", icon: Target },
+  { name: "GitHub Actions", icon: Workflow },
+  { name: "Storybook & Figma", icon: Layers },
   { name: "Git & GitFlow", icon: GitBranch },
   { name: "Acessibilidade web", icon: Shield },
 ];
@@ -54,9 +61,9 @@ const timeline = [
     period: "jan de 2026 - ago de 2026 · 8 meses",
     location: "Remoto",
     description:
-      "Atuei no desenvolvimento e evolução de aplicações web full stack, unindo front-end (React.js, Angular, TypeScript) e back-end (Node.js, MongoDB, AWS) em ambiente ágil (Scrum/Kanban).",
+      "Desenvolvi e mantive aplicações web full stack com Angular, TypeScript e RxJS no front-end e Node.js no back-end, em ambiente ágil (Scrum/Kanban).",
     activities: [
-      "Desenvolvimento de interfaces e funcionalidades com React.js, Angular e TypeScript, com componentização e reutilização.",
+      "Desenvolvimento de interfaces e funcionalidades com Angular, TypeScript e RxJS, utilizando Angular Router para navegação entre módulos.",
       "Projetei e consumi APIs REST com autenticação baseada em token, modelando e otimizando coleções no MongoDB.",
       "Implementei e monitorei infraestrutura AWS (Lambda, S3, CloudWatch), incluindo processamento serverless e observabilidade.",
       "Escrevi e mantive testes automatizados (unitários e de integração) com Jest e Testing Library, reduzindo regressões em produção.",
@@ -64,9 +71,9 @@ const timeline = [
       "Configurei e mantive pipelines de CI/CD com GitHub Actions, automatizando build, testes e deploy.",
     ],
     stack: [
-      "React.js",
       "Angular",
       "TypeScript",
+      "RxJS",
       "Node.js",
       "MongoDB",
       "AWS",
@@ -82,7 +89,7 @@ const timeline = [
     description:
       "Atuei como Desenvolvedor Front End em projetos institucionais de grande impacto, contribuindo para a construção e evolução de aplicações web modernas, escaláveis e acessíveis, alinhadas às necessidades de diferentes áreas da Fiocruz.",
     activities: [
-      "Desenvolvimento e manutenção de interfaces web utilizando React.js, com foco em componentização, reutilização e performance.",
+      "Desenvolvimento de interfaces responsivas e acessíveis com React.js, com prototipação e handoff de telas em Figma.",
       "Criação e evolução de arquitetura front-end, garantindo organização, escalabilidade e facilidade de manutenção.",
       "Implementação de layouts responsivos e acessíveis, seguindo boas práticas de UX/UI e padrões de acessibilidade.",
       "Integração com APIs REST, consumindo dados dinâmicos e garantindo uma boa experiência para o usuário final.",
@@ -92,6 +99,7 @@ const timeline = [
     stack: [
       "React.js",
       "JavaScript",
+      "Figma",
       "APIs REST",
       "GitFlow",
       "UX/UI",
@@ -108,7 +116,9 @@ const timeline = [
       "Atuei como Desenvolvedor Front End Pleno no PagBank, uma das maiores fintechs do Brasil. Desenvolvi interfaces modernas e de alta performance utilizando Next.js, TypeScript e Sass, com forte foco em usabilidade, componentização e integração via arquitetura BFF.",
     activities: [
       "Desenvolvimento de aplicações web modernas e escaláveis com Next.js, TypeScript e Sass.",
+      "Atuação no portal de notícias e em sua área administrativa, com autenticação JWT/OAuth2 e controle de acesso a rotas protegidas.",
       "Integração de APIs utilizando arquitetura BFF (Backend for Frontend).",
+      "Documentação e organização de componentes no Storybook, apoiando a padronização do design system entre squads.",
       "Implementação de boas práticas: clean code, componentização, reuso e otimização.",
       "Colaboração com squads multidisciplinares em ambiente ágil (Scrum).",
       "Versionamento, code review e fluxo Git/GitFlow.",
@@ -118,6 +128,8 @@ const timeline = [
       "TypeScript",
       "Sass",
       "BFF",
+      "JWT/OAuth2",
+      "Storybook",
       "GitFlow",
       "Scrum",
     ],
@@ -158,27 +170,18 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Desenvolvedor Full Stack atuando no desenvolvimento e evolução de
-            aplicações web com React.js, Next.js, TypeScript e Node.js.
-          </p>
-
-          <p>
-            Atuei em projetos no PagBank e Fiocruz, desenvolvendo soluções web,
-            interfaces responsivas e acessíveis, componentes reutilizáveis,
-            APIs REST e integrações com serviços BFF.
+            Desenvolvedor Fullstack com atuação de ponta a ponta em aplicações
+            web: da construção de interfaces e gerenciamento de estado (React.js,
+            Next.js, Angular, TypeScript) ao desenvolvimento de APIs, regras de
+            negócio, persistência de dados e integrações entre sistemas (Node.js,
+            MongoDB, AWS).
           </p>
 
           <p className="mt-4">
-            Tenho experiência com JavaScript/TypeScript, React.js, Next.js,
-            Angular, Node.js, MongoDB e AWS, atuando desde a construção de
-            interfaces e gerenciamento de estado até desenvolvimento de APIs,
-            regras de negócio, persistência de dados e integrações entre sistemas.
-          </p>
-
-          <p className="mt-4">
-            Também trabalho com testes automatizados utilizando Jest e Testing
-            Library, Git, code review e práticas de desenvolvimento em times
-            ágeis, participando do ciclo de desenvolvimento e evolução das aplicações.
+            Experiência em fintech e em projetos institucionais de grande escala,
+            com APIs REST/BFF, autenticação (JWT/OAuth2), testes automatizados
+            (Jest, Testing Library), CI/CD e boas práticas de código limpo, atuando
+            em times ágeis com prática de code review.
           </p>
         </motion.div>
 
@@ -191,7 +194,7 @@ export default function About() {
             className="flex items-center gap-3 text-2xl font-bold mb-8"
           >
             <span className="w-6 h-px bg-accent" />
-            Tecnologias & Ferramentas
+            Competências técnicas
           </motion.h3>
 
           <motion.div
@@ -292,6 +295,28 @@ export default function About() {
             ))}
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mt-20"
+        >
+          <h3 className="flex items-center gap-3 text-2xl font-bold mb-8">
+            <span className="w-6 h-px bg-accent" />
+            Formação acadêmica
+          </h3>
+          <div className="p-6 rounded-lg border border-border bg-card/60 backdrop-blur-sm">
+            <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+              <div>
+                <h4 className="text-xl font-semibold">Análise e Desenvolvimento de Sistemas</h4>
+                <p className="text-accent font-medium">Tecnólogo · Uniamérica</p>
+              </div>
+              <p className="text-sm text-muted-foreground">jan de 2023 – ago de 2025</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

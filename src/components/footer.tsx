@@ -109,11 +109,6 @@ export default function Footer() {
           className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground"
         >
           <p>© {currentYear} Luan Pires. Todos os direitos reservados.</p>
-          <p>
-            Feito com <span className="text-accent">React</span>,{" "}
-            <span className="text-accent">Tailwind</span> &{" "}
-            <span className="text-accent">Framer Motion</span>
-          </p>
         </motion.div>
       </div>
     </footer>

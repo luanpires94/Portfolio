@@ -43,7 +43,7 @@ const stacks = [
 
 const timeline = [
   {
-    role: "Desenvolvedor Fullstack Pleno",
+    role: "Desenvolvedor Fullstack Sênior",
     company: "Certta",
     employment: "Terceirizado",
     period: "jan de 2026 - ago de 2026 · 8 meses",
@@ -67,7 +67,7 @@ const timeline = [
     ],
   },
   {
-    role: "Desenvolvedor Frontend Pleno",
+    role: "Desenvolvedor Frontend Sênior",
     company: "Fiotec – Fundação de Apoio à Fiocruz",
     employment: "Terceirizado",
     period: "jan de 2025 - jan de 2026 · 1 ano 1 mês",
@@ -118,7 +118,7 @@ const timeline = [
     role: "Desenvolvedor Front-end Júnior",
     company: "Instituto Precisa Ser",
     employment: "Tempo integral",
-    period: "jan de 2021 - dez de 2021 · 1 ano",
+    period: "jan de 2022 - dez de 2022 · 1 ano",
     location: "Rio de Janeiro, Brasil",
     description:
       "Desenvolvi e mantive interfaces com HTML, CSS e JavaScript, implementando layouts fiéis ao design com foco em responsividade e acessibilidade.",

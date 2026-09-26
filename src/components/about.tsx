@@ -43,7 +43,7 @@ const stacks = [
 
 const timeline = [
   {
-    role: "Desenvolvedor Fullstack Sênior",
+    role: "Desenvolvedor Fullstack Pleno",
     company: "Certta",
     employment: "Terceirizado",
     period: "jan de 2026 - ago de 2026 · 8 meses",
@@ -67,7 +67,7 @@ const timeline = [
     ],
   },
   {
-    role: "Desenvolvedor Frontend Sênior",
+    role: "Desenvolvedor Frontend Pleno",
     company: "Fiotec – Fundação de Apoio à Fiocruz",
     employment: "Terceirizado",
     period: "jan de 2025 - jan de 2026 · 1 ano 1 mês",

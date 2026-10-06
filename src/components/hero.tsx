@@ -70,21 +70,18 @@ export default function Hero() {
             <h1 className="text-5xl md:text-7xl font-bold text-balance">
               Olá, sou o <span className="text-accent">Luan</span>
             </h1>
-            <p className="text-lg md:text-xl font-medium text-muted-foreground">
-              Desenvolvedor{" "}
-              <span className="text-foreground font-semibold">Front-end</span>
-              {" "}· React.js / Next.js · TypeScript
-            </p>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Desenvolvedor com foco em front-end e experiência fullstack em aplicações web, principalmente com{" "}
+              Desenvolvedor Fullstack com experiência em aplicações web,
+              principalmente com{" "}
               <span className="text-foreground font-semibold">
-                React.js, Next.js, Angular e TypeScript
+                React.js, Next.js, Angular, TypeScript e Node.js
               </span>
-              . Também tenho experiência prática com APIs REST e BFF, Node.js, autenticação, MongoDB e AWS.
+              . Também tenho experiência com APIs REST e BFF, autenticação,
+              MongoDB e AWS.
             </p>
           </motion.div>
 

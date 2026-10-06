@@ -142,17 +142,18 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Desenvolvedor front-end com experiência na construção e evolução
-            de aplicações web usando React.js, Next.js, Angular e TypeScript.
-            Tenho também vivência em projetos fullstack, colaborando com APIs,
-            BFF e integrações com serviços de back-end.
-          </p>
-
-          <p className="mt-4">
-            Na minha experiência mais recente, trabalhei também com Node.js,
-            MongoDB e serviços AWS (Lambda, S3 e CloudWatch). Tenho experiência
-            com testes automatizados (Jest, Testing Library), CI/CD e boas
-            práticas de código, em times ágeis com code review.
+            Desenvolvedor Fullstack com experiência no desenvolvimento e
+            evolução de aplicações web, principalmente com React.js, Next.js,
+            Angular e TypeScript, atuando com construção de interfaces,
+            componentização, gerenciamento de estado, integração com APIs e foco
+            em performance e experiência do usuário. Também tenho experiência
+            prática com Node.js, APIs REST e BFF, incluindo integração entre
+            serviços, tratamento e transformação de dados, autenticação e
+            persistência com MongoDB. Já atuei em projetos de fintech e
+            institucionais de grande escala, participando de diferentes etapas
+            do desenvolvimento de aplicações. Tenho experiência com Jest,
+            Testing Library, Git, CI/CD, AWS, Storybook e boas práticas de
+            desenvolvimento, além de atuação em times ágeis com code review.
           </p>
         </motion.div>
 

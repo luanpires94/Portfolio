@@ -80,11 +80,11 @@ export default function Hero() {
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Desenvolvedor front-end com experiência em aplicações web e vivência em projetos fullstack, usando{" "}
+              Desenvolvedor com foco em front-end e experiência fullstack em aplicações web, principalmente com{" "}
               <span className="text-foreground font-semibold">
                 React.js, Next.js, Angular e TypeScript
               </span>
-              . Também tive contato com APIs, Node.js, MongoDB e AWS.
+              . Também tenho experiência prática com APIs REST e BFF, Node.js, autenticação, MongoDB e AWS.
             </p>
           </motion.div>
 

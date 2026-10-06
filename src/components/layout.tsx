@@ -6,14 +6,14 @@ import "./globals.css";
 const _geistSans = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Luan Pires | Desenvolvedor Full Stack",
+  title: "Luan Pires | Desenvolvedor Front-end",
   description:
-    "Portfólio de Luan Pires, Desenvolvedor Full Stack com experiência em React.js, Next.js, TypeScript, Node.js, APIs REST, MongoDB e AWS.",
+    "Portfólio de Luan Pires, Desenvolvedor Front-end com experiência em React.js, Next.js e TypeScript, além de vivência em projetos fullstack.",
   keywords: [
     "React",
     "TypeScript",
     "Next.js",
-    "Full Stack Developer",
+    "Front-end Developer",
     "Web Development",
     "Portugal",
   ],
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://luanpires.com",
-    title: "Luan Pires | Desenvolvedor Full Stack",
+    title: "Luan Pires | Desenvolvedor Front-end",
     description:
-      "Desenvolvedor Full Stack com experiência em React.js, Next.js, TypeScript e Node.js.",
+      "Desenvolvedor Front-end com experiência em React.js, Next.js e TypeScript, além de vivência em projetos fullstack.",
     siteName: "Luan Pires Portfolio",
     images: [
       {
@@ -84,7 +84,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Luan Pires",
               url: "https://luanpires.com",
-              jobTitle: "Full Stack Developer",
+              jobTitle: "Front-end Developer",
               sameAs: [
                 "https://github.com/luanpires",
                 "https://linkedin.com/in/luanpires",

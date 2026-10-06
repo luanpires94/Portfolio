@@ -31,7 +31,8 @@ export default function Contact() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">Informações de Contato</h3>
               <p className="text-muted-foreground">
-                Estou aberto a oportunidades como Desenvolvedor Fullstack, em
+                Estou aberto a oportunidades como Desenvolvedor Front-end, com
+                vivência em projetos fullstack, em
                 modelos remoto ou híbrido. Vamos conversar sobre o seu próximo desafio.
               </p>
             </div>

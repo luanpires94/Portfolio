@@ -142,18 +142,17 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Desenvolvedor Fullstack com atuação de ponta a ponta em aplicações
-            web: construção de interfaces e gerenciamento de estado (React.js,
-            Next.js, Angular, TypeScript) e desenvolvimento de back-end — APIs
-            REST/BFF, regras de negócio, modelagem e persistência de dados,
-            autenticação (JWT/OAuth2) e integrações entre sistemas (Node.js,
-            MongoDB).
+            Desenvolvedor front-end com experiência na construção e evolução
+            de aplicações web usando React.js, Next.js, Angular e TypeScript.
+            Tenho também vivência em projetos fullstack, colaborando com APIs,
+            BFF e integrações com serviços de back-end.
           </p>
 
           <p className="mt-4">
-            Experiência com infraestrutura AWS (Lambda, S3, CloudWatch), testes
-            automatizados (Jest, Testing Library), CI/CD e boas práticas de código
-            limpo, atuando em times ágeis com prática de code review.
+            Na minha experiência mais recente, trabalhei também com Node.js,
+            MongoDB e serviços AWS (Lambda, S3 e CloudWatch). Tenho experiência
+            com testes automatizados (Jest, Testing Library), CI/CD e boas
+            práticas de código, em times ágeis com code review.
           </p>
         </motion.div>
 

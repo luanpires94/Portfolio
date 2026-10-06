@@ -72,19 +72,19 @@ export default function Hero() {
             </h1>
             <p className="text-lg md:text-xl font-medium text-muted-foreground">
               Desenvolvedor{" "}
-              <span className="text-foreground font-semibold">Fullstack</span>
-              {" "}· React.js / Next.js · Node.js · TypeScript · AWS
+              <span className="text-foreground font-semibold">Front-end</span>
+              {" "}· React.js / Next.js · TypeScript
             </p>
           </motion.div>
 
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Atuo de ponta a ponta em aplicações web com{" "}
+              Desenvolvedor front-end com experiência em aplicações web e vivência em projetos fullstack, usando{" "}
               <span className="text-foreground font-semibold">
-                React.js, Next.js, Angular, Node.js e TypeScript
+                React.js, Next.js, Angular e TypeScript
               </span>
-              , da interface ao back-end, dados e infraestrutura em AWS.
+              . Também tive contato com APIs, Node.js, MongoDB e AWS.
             </p>
           </motion.div>
 

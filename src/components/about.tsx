@@ -46,15 +46,14 @@ const timeline = [
     role: "Desenvolvedor Fullstack Pleno",
     company: "Certta",
     employment: "Terceirizado",
-    period: "jan de 2026 - ago de 2026 · 8 meses",
     location: "Remoto",
     description:
-      "Desenvolvi e mantive aplicações full stack unindo front-end (Angular, TypeScript, RxJS) e back-end (Node.js), em ambiente ágil Scrum/Kanban.",
+      "Atuo no desenvolvimento e evolução de aplicações web, unindo front-end (Angular, TypeScript e RxJS) e back-end (Node.js, MongoDB e AWS) em ambiente ágil (Scrum/Kanban).",
     activities: [
       "Projetei e consumi APIs REST com autenticação baseada em token, modelando e otimizando coleções no MongoDB.",
       "Implementei e monitorei infraestrutura AWS (Lambda, S3, CloudWatch), incluindo processamento serverless e observabilidade.",
       "Escrevi e mantive testes automatizados (unitários e de integração) com Jest e Testing Library, reduzindo regressões em produção.",
-      "Utilizei ferramentas de IA generativa (Cursor, Claude) no fluxo de desenvolvimento para refatoração, geração de testes e análise de erros; configurei pipelines de CI/CD com GitHub Actions.",
+      "Aplico IA generativa (Cursor e Claude) em refatoração, geração de testes e análise de erros. Configuro e mantenho pipelines de CI/CD com GitHub Actions, automatizando build, testes e deploy.",
     ],
     stack: [
       "Angular",
@@ -70,13 +69,12 @@ const timeline = [
     role: "Desenvolvedor Frontend Pleno",
     company: "Fiotec – Fundação de Apoio à Fiocruz",
     employment: "Terceirizado",
-    period: "jan de 2025 - jan de 2026 · 1 ano 1 mês",
     location: "Híbrido · Rio de Janeiro",
     description:
-      "Desenvolvi e mantive interfaces web com React.js em projetos institucionais de grande impacto na Fiocruz, com foco em componentização, reutilização, responsividade e performance.",
+      "Atuei em projetos institucionais da Fiocruz, contribuindo para a construção, manutenção e evolução de aplicações web com React.js, com foco em qualidade, acessibilidade, responsividade e experiência do usuário.",
     activities: [
       "Integrei e consumi APIs REST, realizando tratamento de dados e integração das interfaces com serviços de back-end.",
-      "Evoluí a arquitetura front-end buscando organização, escalabilidade e facilidade de manutenção; implementei interfaces acessíveis seguindo boas práticas de UX/UI, com prototipação e handoff de telas em Figma.",
+      "Evoluí a arquitetura front-end para melhorar organização, escalabilidade e manutenção. Implementei interfaces responsivas e acessíveis, e realizei prototipação e handoff de telas com Figma.",
       "Colaborei com times multidisciplinares em ambiente ágil, com versionamento em Git/GitFlow, code reviews e participação em cerimônias e alinhamentos técnicos.",
     ],
     stack: [
@@ -90,16 +88,15 @@ const timeline = [
     ],
   },
   {
-    role: "Desenvolvedor Fullstack Pleno",
+    role: "Desenvolvedor Front-end Pleno",
     company: "PagBank",
     employment: "Terceirizado",
-    period: "jan de 2023 - jan de 2025 · 2 anos 1 mês",
     location: "Remoto",
     description:
-      "Desenvolvi e mantive aplicações com Next.js, TypeScript e SASS, e a camada BFF (Backend for Frontend) em Node.js, integrando front-end a APIs e serviços internos.",
+      "Atuei principalmente no front-end e na camada BFF (Backend for Frontend), desenvolvendo e evoluindo aplicações web com Next.js, TypeScript, SASS e Node.js.",
     activities: [
-      "Implementei e mantive fluxos de autenticação e autorização com JWT/OAuth2, incluindo área administrativa logada e rotas protegidas.",
-      "Realizei tratamento e transformação de dados no BFF, e integração/consumo de APIs REST com tratamento de erros entre camadas.",
+      "Mantive fluxos de autenticação e autorização com JWT/OAuth2, incluindo área administrativa autenticada, controle de acesso e rotas protegidas.",
+      "Mantive endpoints no BFF, integrando o front-end a APIs e serviços internos e transformando dados conforme as necessidades das aplicações. Integrei APIs REST com tratamento de respostas e erros.",
       "Documentei componentes de UI no Storybook, padronizando o design system entre squads; colaborei em ambiente ágil (Scrum) com code reviews.",
     ],
     stack: [
@@ -118,7 +115,6 @@ const timeline = [
     role: "Desenvolvedor Front-end Júnior",
     company: "Instituto Precisa Ser",
     employment: "Tempo integral",
-    period: "jan de 2022 - dez de 2022 · 1 ano",
     location: "Rio de Janeiro, Brasil",
     description:
       "Desenvolvi e mantive interfaces com HTML, CSS e JavaScript, implementando layouts fiéis ao design com foco em responsividade e acessibilidade.",
@@ -236,7 +232,6 @@ export default function About() {
                   </div>
 
                   <div className="mt-2 md:mt-0 md:text-right text-sm text-muted-foreground">
-                    <p>{exp.period}</p>
                     <p>{exp.location}</p>
                   </div>
                 </div>

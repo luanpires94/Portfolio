@@ -66,7 +66,7 @@ const timeline = [
     ],
   },
   {
-    role: "Desenvolvedor Frontend Pleno",
+    role: "Desenvolvedor Front-end Pleno",
     company: "Fiotec – Fundação de Apoio à Fiocruz",
     employment: "Terceirizado",
     location: "Híbrido · Rio de Janeiro",

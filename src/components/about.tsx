@@ -43,19 +43,19 @@ const stacks = [
 
 const timeline = [
   {
-    role: "Desenvolvedor Front-end Pleno",
+    role: "Desenvolvedor Fullstack Pleno",
     company: "Certta",
     employment: "Terceirizado",
     location: "Remoto",
     description:
-      "Atuei em aplicações web com foco no front-end, desenvolvendo funcionalidades com Angular, TypeScript e RxJS e integrando APIs REST. Também trabalhei com Node.js, Python, MongoDB e serviços AWS em ambiente ágil (Scrum/Kanban).",
+      "Atuei em aplicações web com foco no front-end (Angular, TypeScript e RxJS) e atuação no back-end com Node.js, Python, MongoDB e AWS, em ambiente ágil (Scrum/Kanban).",
     activities: [
       "Desenvolvi e mantive funcionalidades em Angular, TypeScript e RxJS, com integração a APIs REST, tratamento de dados e correção de problemas.",
-      "Implementei uma funcionalidade de aprovação de perfis restrita a usuários administradores, no front-end e no back-end.",
-      "Desenvolvi e mantive funcionalidades de um chatbot interno em Python que retornava templates conforme a solicitação do usuário, investigando falhas de integração e inconsistências nos dados.",
-      "Trabalhei com serviços em Node.js, consultas e manipulação de dados no MongoDB e serviços AWS (Lambda, S3 e CloudWatch).",
+      "Implementei, no front-end e no back-end, uma funcionalidade de aprovação de perfis restrita a usuários com permissão de administrador (controle de acesso por perfil).",
+      "Desenvolvi e mantive funcionalidades de um chatbot interno em Python que retornava templates conforme a solicitação do usuário, investigando falhas de integração e inconsistências nos dados utilizados para gerar as respostas.",
+      "Trabalhei com serviços em Node.js, consultas e manipulação de dados no MongoDB e aplicações com serviços AWS (Lambda, S3 e CloudWatch).",
       "Mantive testes automatizados com Jest e Testing Library e participei do fluxo de CI/CD com GitHub Actions.",
-      "Usei Claude e Cursor para investigar erros, refatorar e criar testes, revisando o código gerado.",
+      "Usei Claude e Cursor para investigar erros, refatorar e criar testes, sempre revisando o código gerado.",
     ],
     stack: [
       "Angular",

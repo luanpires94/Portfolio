@@ -8,7 +8,7 @@ const _geistSans = Geist({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Luan Pires | Desenvolvedor Front-end",
   description:
-    "Desenvolvedor Front-end Pleno: React.js, Next.js, Angular e TypeScript. Experiência com interfaces escaláveis, acessíveis e performáticas, além de Node.js, BFF e AWS.",
+    "Desenvolvedor Front-end: React.js, Next.js, Angular e TypeScript. Experiência com interfaces escaláveis, acessíveis e performáticas, além de Node.js, BFF e AWS.",
   keywords: [
     "React",
     "TypeScript",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://luanpires.com",
     title: "Luan Pires | Desenvolvedor Front-end",
     description:
-      "Desenvolvedor Front-end Pleno com experiência em React.js, Next.js, Angular, TypeScript e APIs REST.",
+      "Desenvolvedor Front-end com experiência em React.js, Next.js, Angular, TypeScript e APIs REST.",
     siteName: "Luan Pires Portfolio",
     images: [
       {

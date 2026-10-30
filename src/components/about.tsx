@@ -148,7 +148,7 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Desenvolvedor Front-end Pleno com experiência construindo
+            Desenvolvedor Front-end com experiência construindo
             interfaces web escaláveis, acessíveis e performáticas com React.js,
             Next.js, Angular e TypeScript. Atuei em fintech (PagBank) e em
             projetos institucionais de grande escala (Fiotec/Fiocruz), com foco

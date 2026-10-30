@@ -21,7 +21,7 @@ export default function Footer() {
           >
             <h3 className="text-lg font-bold">Luan Pires</h3>
             <p className="text-sm text-muted-foreground">
-              Desenvolvedor Front-end Pleno, trabalhando principalmente com
+              Desenvolvedor Front-end, trabalhando principalmente com
               React.js, Next.js, Angular e TypeScript.
             </p>
           </motion.div>

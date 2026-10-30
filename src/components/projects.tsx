@@ -27,9 +27,9 @@ const projects: Project[] = [
   {
     title: "SnippetVault — Cofre de Snippets",
     description:
-      "Interface em Next.js para salvar, organizar e buscar trechos de código, com tags e filtro por linguagem. O projeto integra front-end e back-end, com autenticação JWT e persistência em MongoDB.",
+      "Interface em Next.js para salvar, organizar e buscar trechos de código, com tags e filtro por linguagem. Inclui autenticação JWT e persistência em MongoDB.",
     stack: ["Next.js", "MongoDB", "JWT", "TypeScript"],
-    highlight: "Projeto fullstack",
+    highlight: "Next.js · TypeScript",
     demo: "https://snippet-vault-olive.vercel.app/",
     repo: "https://github.com/luanpires94/snippet-vault",
   },
@@ -69,8 +69,7 @@ export default function Projects() {
 
         <p className="max-w-2xl -mt-8 mb-10 text-muted-foreground leading-relaxed">
           Uma seleção de projetos com foco em interfaces, componentização e
-          responsividade, incluindo experiências com autenticação e integração
-          entre front-end e back-end em projetos pessoais.
+          responsividade, incluindo integrações com APIs e fluxos de autenticação.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

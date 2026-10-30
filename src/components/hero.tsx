@@ -75,13 +75,13 @@ export default function Hero() {
           {/* Subheadline */}
           <motion.div variants={item} className="text-center space-y-4">
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Desenvolvedor Fullstack com experiência em aplicações web,
-              principalmente com{" "}
+              Desenvolvedor Front-end Pleno, construindo interfaces web
+              escaláveis, acessíveis e performáticas com{" "}
               <span className="text-foreground font-semibold">
-                React.js, Next.js, Angular, TypeScript e Node.js
+                React.js, Next.js, Angular e TypeScript
               </span>
-              . Também tenho experiência com APIs REST e BFF, autenticação,
-              MongoDB e AWS.
+              . Tenho experiência em fintech e projetos institucionais, com
+              atuação complementar em Node.js, BFF e serviços AWS.
             </p>
           </motion.div>
 

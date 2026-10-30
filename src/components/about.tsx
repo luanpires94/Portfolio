@@ -28,7 +28,7 @@ const stacks = [
   { name: "SASS", icon: Layers },
   { name: "Styled Components", icon: Layers },
   { name: "Node.js", icon: Server },
-  { name: "APIs REST, GraphQL & BFF", icon: Plug },
+  { name: "APIs REST & BFF", icon: Plug },
   { name: "MongoDB", icon: Database },
   { name: "AWS: Lambda, S3 & CloudWatch", icon: Cloud },
   { name: "JWT & OAuth2", icon: Shield },
@@ -43,27 +43,25 @@ const stacks = [
 
 const timeline = [
   {
-    role: "Desenvolvedor Fullstack Pleno",
+    role: "Desenvolvedor Front-end Pleno",
     company: "Certta",
     employment: "Terceirizado",
     location: "Remoto",
     description:
-      "Atuei no desenvolvimento e evolução de aplicações web, integrando front-end (Angular, TypeScript e RxJS), back-end (Node.js e MongoDB), serviços AWS e soluções relacionadas à inteligência artificial, em ambiente ágil (Scrum/Kanban).",
+      "Atuei em aplicações web com foco no front-end, desenvolvendo funcionalidades com Angular, TypeScript e RxJS e integrando APIs REST. Também trabalhei com Node.js, Python, MongoDB e serviços AWS em ambiente ágil (Scrum/Kanban).",
     activities: [
-      "Desenvolvimento de interfaces e funcionalidades com Angular, TypeScript e RxJS, utilizando Angular Router, componentização e reutilização de componentes.",
-      "Utilização de Python e contato com tecnologias de IA generativa, incluindo conceitos de LLM e RAG.",
-      "Desenvolvimento e consumo de APIs REST com autenticação baseada em tokens, além de manipulação de dados no MongoDB.",
-      "Atuação com serviços AWS, como Lambda, S3 e CloudWatch, em aplicações e processamento serverless.",
-      "Escrita e manutenção de testes automatizados com Jest e Testing Library.",
-      "Utilização de ferramentas de IA generativa, como Cursor e Claude, para apoiar refatorações, geração de testes e análise de erros.",
-      "Atuação em processos de CI/CD com GitHub Actions, envolvendo automação de builds, testes e deploys.",
+      "Desenvolvi e mantive funcionalidades em Angular, TypeScript e RxJS, com integração a APIs REST, tratamento de dados e correção de problemas.",
+      "Implementei uma funcionalidade de aprovação de perfis restrita a usuários administradores, no front-end e no back-end.",
+      "Desenvolvi e mantive funcionalidades de um chatbot interno em Python que retornava templates conforme a solicitação do usuário, investigando falhas de integração e inconsistências nos dados.",
+      "Trabalhei com serviços em Node.js, consultas e manipulação de dados no MongoDB e serviços AWS (Lambda, S3 e CloudWatch).",
+      "Mantive testes automatizados com Jest e Testing Library e participei do fluxo de CI/CD com GitHub Actions.",
+      "Usei Claude e Cursor para investigar erros, refatorar e criar testes, revisando o código gerado.",
     ],
     stack: [
       "Angular",
       "TypeScript",
       "RxJS",
       "Python",
-      "IA generativa · LLM · RAG",
       "Node.js",
       "MongoDB",
       "AWS · Lambda · S3 · CloudWatch",
@@ -150,18 +148,26 @@ export default function About() {
           className="mb-12 text-lg text-muted-foreground leading-relaxed max-w-3xl"
         >
           <p className="mb-4">
-            Desenvolvedor Fullstack com experiência no desenvolvimento e
-            evolução de aplicações web, principalmente com React.js, Next.js,
-            Angular e TypeScript, atuando com construção de interfaces,
-            componentização, gerenciamento de estado, integração com APIs e foco
-            em performance e experiência do usuário. Também tenho experiência
-            prática com Node.js, APIs REST e BFF, incluindo integração entre
-            serviços, tratamento e transformação de dados, autenticação e
-            persistência com MongoDB. Já atuei em projetos de fintech e
-            institucionais de grande escala, participando de diferentes etapas
-            do desenvolvimento de aplicações. Tenho experiência com Jest,
-            Testing Library, Git, CI/CD, AWS, Storybook e boas práticas de
-            desenvolvimento, além de atuação em times ágeis com code review.
+            Desenvolvedor Front-end Pleno com experiência construindo
+            interfaces web escaláveis, acessíveis e performáticas com React.js,
+            Next.js, Angular e TypeScript. Atuei em fintech (PagBank) e em
+            projetos institucionais de grande escala (Fiotec/Fiocruz), com foco
+            em componentização, design system, experiência do usuário e
+            qualidade de entrega.
+          </p>
+          <p className="mb-4">
+            No dia a dia, construo interfaces responsivas e acessíveis, com
+            gerenciamento de estado e integração com APIs REST; organizo e
+            documento componentes reutilizáveis no Storybook; evoluo a
+            arquitetura front-end; escrevo testes com Jest e Testing Library;
+            e trabalho com Git/GitFlow, code review, CI/CD com GitHub Actions e
+            times ágeis (Scrum/Kanban). Também colaboro com design usando Figma.
+          </p>
+          <p>
+            Tenho experiência complementar com BFF em Node.js, autenticação
+            JWT/OAuth2 e transformação de dados, MongoDB e serviços AWS (Lambda,
+            S3 e CloudWatch). Uso Cursor e Claude como apoio para refatoração,
+            testes e análise de erros.
           </p>
         </motion.div>
 
